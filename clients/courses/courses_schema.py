@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
+
 from clients.files.files_schema import FileSchema
 from clients.users.users_schema import UserSchema
 
@@ -7,6 +8,7 @@ class CourseSchema(BaseModel):
     """
     Описание структуры курса.
     """
+    model_config = ConfigDict(populate_by_name=True)
 
     id: str
     title: str
@@ -17,12 +19,13 @@ class CourseSchema(BaseModel):
     estimated_time: str = Field(alias="estimatedTime")
     created_by_user: UserSchema = Field(alias="createdByUser")
 
+
 class GetCoursesQuerySchema(BaseModel):
     """
     Описание структуры запроса на получение списка курсов.
     """
     model_config = ConfigDict(populate_by_name=True)
-    
+
     user_id: str = Field(alias="userId")
 
 

@@ -5,6 +5,8 @@ class ExerciseSchema(BaseModel):
     """
     Описание структуры задания.
     """
+    model_config = ConfigDict(populate_by_name=True)
+
     id: str
     title: str
     course_id: str = Field(alias="courseId")
@@ -15,26 +17,27 @@ class ExerciseSchema(BaseModel):
     estimated_time: str = Field(alias="estimatedTime")
 
 
+class GetExerciseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на получение задания..
+    """
+    exercise: ExerciseSchema
+
+
 class GetExercisesQuerySchema(BaseModel):
     """
-    Описание структуры запроса на получение заданий для определенного курса.
+    Описание структуры запроса на получение списка заданий.
     """
     model_config = ConfigDict(populate_by_name=True)
-    
+
     course_id: str = Field(alias="courseId")
+
 
 class GetExercisesResponseSchema(BaseModel):
     """
-    Описание структуры запроса на получение списка заданий для определенного курса.
+    Описание структуры ответа на получение списка заданий.
     """
     exercises: list[ExerciseSchema]
-
-
-class GetExerciseResponseSchema(BaseModel):
-    """
-    Описание структуры ответа на получение задания.
-    """
-    exercise: ExerciseSchema
 
 
 class CreateExerciseRequestSchema(BaseModel):
@@ -54,14 +57,14 @@ class CreateExerciseRequestSchema(BaseModel):
 
 class CreateExerciseResponseSchema(BaseModel):
     """
-    Описание структуры ответа на создание задания.
+    Описание структуры ответа создания задания.
     """
     exercise: ExerciseSchema
 
 
 class UpdateExerciseRequestSchema(BaseModel):
     """
-    Описание структуры запроса на обновление данных задания.
+    Описание структуры запроса на обновление задания.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -75,6 +78,6 @@ class UpdateExerciseRequestSchema(BaseModel):
 
 class UpdateExerciseResponseSchema(BaseModel):
     """
-    Описание структуры ответа на обновление данных задания.
+    Описание структуры ответа обновления задания.
     """
     exercise: ExerciseSchema

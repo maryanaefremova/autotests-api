@@ -1,10 +1,9 @@
-from typing import TypedDict
-
 from httpx import Response
 
 from clients.api_client import APIClient
+from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, UpdateCourseRequestSchema, \
+    CreateCourseResponseSchema
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
-from clients.courses.courses_schema import CreateCourseRequestSchema, GetCoursesQuerySchema, UpdateCourseRequestSchema, CreateCourseResponseSchema
 
 
 class CoursesClient(APIClient):
@@ -48,7 +47,10 @@ class CoursesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f"/api/v1/courses/{course_id}", json=request.model_dump(by_alias=True))
+        return self.patch(
+            f"/api/v1/courses/{course_id}",
+            json=request.model_dump(by_alias=True)
+        )
 
     def delete_course_api(self, course_id: str) -> Response:
         """
