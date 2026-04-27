@@ -1,24 +1,10 @@
-from typing import Any, Sized
+import allure
 
 from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
-from tools.assertions.base import assert_equal
-
-def assert_length(actual: Sized, expected: Sized, name: str):
-    """
-    Проверяет, что длины двух объектов совпадают.
-
-    :param name: Название проверяемого объекта.
-    :param actual: Фактический объект.
-    :param expected: Ожидаемый объект.
-    :raises AssertionError: Если длины не совпадают.
-    """
-    assert len(actual) == len(expected), (
-        f'Incorrect object length: "{name}". '
-        f'Expected length: {len(expected)}. '
-        f'Actual length: {len(actual)}'
-    )
+from tools.assertions.base import assert_equal, assert_length
 
 
+@allure.step("Check validation error")
 def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationErrorSchema):
     """
     Проверяет, что объект ошибки валидации соответствует ожидаемому значению.
@@ -34,6 +20,7 @@ def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationE
     assert_equal(actual.location, expected.location, "location")
 
 
+@allure.step("Check validation error response")
 def assert_validation_error_response(
         actual: ValidationErrorResponseSchema,
         expected: ValidationErrorResponseSchema
@@ -52,6 +39,7 @@ def assert_validation_error_response(
         assert_validation_error(actual.details[index], detail)
 
 
+@allure.step("Check internal error response")
 def assert_internal_error_response(
         actual: InternalErrorResponseSchema,
         expected: InternalErrorResponseSchema
