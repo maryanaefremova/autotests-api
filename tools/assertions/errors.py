@@ -6,6 +6,7 @@ from tools.logger import get_logger
 
 logger = get_logger("ERRORS_ASSERTIONS") 
 
+
 @allure.step("Check validation error")
 def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationErrorSchema):
     """
@@ -58,5 +59,5 @@ def assert_internal_error_response(
     :raises AssertionError: Если значения полей не совпадают.
     """
     logger.info("Check internal error response")
-    
+
     assert_equal(actual.details, expected.details, "details")

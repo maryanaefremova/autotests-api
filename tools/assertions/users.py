@@ -6,6 +6,7 @@ from tools.logger import get_logger
 
 logger = get_logger("USERS_ASSERTIONS")
 
+
 @allure.step("Check create user response")
 def assert_create_user_response(request: CreateUserRequestSchema, response: CreateUserResponseSchema):
     """
@@ -51,5 +52,5 @@ def assert_get_user_response(get_user_response: GetUserResponseSchema, create_us
     :raises AssertionError: Если данные пользователя не совпадают.
     """
     logger.info("Check get user response")
-    
+
     assert_user(actual=get_user_response.user, expected=create_user_response.user)
