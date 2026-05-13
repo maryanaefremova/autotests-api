@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTEzVDEyOjQ5OjEyLjY2NTUzMSIsInVzZXJfaWQiOiIxN2NkZmMwNi05ZjdiLTRhMTItOWU3ZS0xYWFmMDUyY2NkNjQifQ.5Ni0Uu94id_96paJetHurmqgSgt57HB12ff9ZcNsR5w' \
+  -H 'content-length: 345' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Dog purpose go down happy.","maxScore":82,"minScore":27,"description":"Huge note evening popular cup. But door arm general bed.\nSubject lot join feel night with. Perform another full me billion.","estimatedTime":"4 weeks","previewFileId":"b1ae4d50-9bae-448d-93fe-506e85b3b67f","createdByUserId":"17cdfc06-9f7b-4a12-9e7e-1aaf052ccd64"}'

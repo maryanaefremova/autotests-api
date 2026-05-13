@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTEzVDEyOjQ5OjEwLjIyMzEyNSIsInVzZXJfaWQiOiJjMTBiYjdhMC1jYWRiLTQzMjQtODllMi1jODE2ZGU0N2E0N2UifQ.QQJuhPd2GyK-ye5KCRX4vB5YJONgEaQlf5XYpJu2FzU' \
+  -H 'content-length: 419' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Movement first mission or do.","maxScore":54,"minScore":18,"description":"Institution need only live common tonight. Account chance section hotel large.\nOperation five star available Republican.\nSecurity threat enter knowledge dark. Reach price sort number ago eye a.","estimatedTime":"1 weeks","previewFileId":"2a9b8aa8-a1e4-4671-b236-14213f0981ea","createdByUserId":"c10bb7a0-cadb-4324-89e2-c816de47a47e"}'

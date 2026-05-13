@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTEzVDEyOjQ5OjEyLjAwODUwNCIsInVzZXJfaWQiOiIzMWYxOTA4My05NWQyLTRkMDAtYjNkOS01MWQxZjI1MjJjZmQifQ.Sla0isD5n45vB_cHMqXHXt-vFwnBFb2Y7I1zZpbdNtA' \
+  -H 'content-length: 375' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sister research hour I.","maxScore":57,"minScore":29,"description":"Open occur forward field pretty save. New tonight avoid whose ask ago. Result wide man.\nAlways lawyer suggest perhaps spring. Clearly lead age attack admit.","estimatedTime":"2 weeks","previewFileId":"bb7d484e-2081-4fad-80c1-f0aec22f4011","createdByUserId":"31f19083-95d2-4d00-b3d9-51d1f2522cfd"}'
