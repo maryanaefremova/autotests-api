@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTEzVDEzOjA3OjAyLjE0NzYzNiIsInVzZXJfaWQiOiIwYzQwNDE0ZS05MzA2LTQ5OGYtYTZmNS1mYWNlY2NiNTcwOTcifQ.mKs7QPuPpsiZTYKbrRC7w7_Hhj8BvWhwHHVojFz8Vws' \
+  -H 'content-length: 374' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Type despite painting suggest president wonder.","maxScore":79,"minScore":26,"description":"Record group word pretty personal court. Level court scientist land. Explain building message development institution consumer box.","estimatedTime":"10 weeks","previewFileId":"45ed0af7-8f46-4693-a393-4f90bdb00a05","createdByUserId":"0c40414e-9306-498f-a6f5-faceccb57097"}'

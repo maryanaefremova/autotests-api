@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/90903443-1510-4ca4-a456-c21b866cdc45' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTEzVDEzOjA2OjU5Ljc0Njc2NSIsInVzZXJfaWQiOiJhMDY1NWFjNS1mYjdkLTQ5ZmUtYjNiNi1iZDJjNzcxYjQ4ZmIifQ.GoK65V2owQiN5QNpp8Vj1FENR2Fqef1_Jbx2tsEI_0g' \
+  -H 'content-length: 241' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Value us final old bank adult push.","maxScore":50,"minScore":1,"description":"Worry night sound represent majority contain possible. College coach eight. Seat industry late example five prevent prevent.","estimatedTime":"9 weeks"}'
