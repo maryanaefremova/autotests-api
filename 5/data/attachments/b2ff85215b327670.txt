@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b5fd7487-12dc-4515-961e-4024315e5bec' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQzLjk0ODk4MiIsInVzZXJfaWQiOiJmNWZhOGNmYy1kNmQ4LTRmMDktYjZjZi1mMWYzNWEwYmI0MjkifQ.GLuXkO4KQV9z4dkmTaabyWGE4QxDxp2E5QAuVHnTxjI' \
+  -H 'content-length: 239' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Performance traditional plant product play others chance.","maxScore":54,"minScore":25,"description":"Relationship product hour recently.\nAlready me administration the eat. Site again open wish study.","estimatedTime":"3 weeks"}'

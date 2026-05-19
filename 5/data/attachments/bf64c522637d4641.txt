@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQzLjk0ODk4MiIsInVzZXJfaWQiOiJmNWZhOGNmYy1kNmQ4LTRmMDktYjZjZi1mMWYzNWEwYmI0MjkifQ.GLuXkO4KQV9z4dkmTaabyWGE4QxDxp2E5QAuVHnTxjI' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"East allow up national popular.","maxScore":96,"minScore":26,"description":"Even treat senior. Star charge front short drug. Group present character sure.\nWestern we hour worker own. Thought audience camera evening feel hand entire big. New wind first.","estimatedTime":"2 weeks","previewFileId":"575c7f11-f1ff-4024-9cd5-8c6484e51060","createdByUserId":"f5fa8cfc-d6d8-4f09-b6cf-f1f35a0bb429"}'

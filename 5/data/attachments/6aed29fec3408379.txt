@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ3Ljg3ODc3NSIsInVzZXJfaWQiOiI2NzQzZDQ1ZC01OTA5LTRkN2EtOGJkNy1lNWU3YjZjYTgzMWYifQ.fFBGf9QQKpZAeZiBExcuX-voEtmCy0n2FVSKwGmwzt4' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Important risk skin close.","courseId":"06c50bab-afcb-4263-a835-724da0e8f4ab","maxScore":89,"minScore":7,"orderIndex":13,"description":"Plant growth until. Window four arrive fill. Food pick determine learn yeah cup.\nSenior difference crime. A model offer special left price view. Line within movement environmental pull but.","estimatedTime":"9 weeks"}'

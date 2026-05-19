@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ2LjYxNDEyMSIsInVzZXJfaWQiOiJhMzg0MWQ1OC05NGFmLTQ5YzctOWE4ZS00MmM3ZDg5NTFkYTcifQ.VxLwHHM1wLU2DV4uTZI5fT_Y6OUpwqBThqPdmepz4i4' \
+  -H 'content-length: 334' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fine message concern capital.","courseId":"db9f3cdd-c0c5-49ba-9c35-9800051870e7","maxScore":61,"minScore":30,"orderIndex":31,"description":"West green home allow far effect. Buy subject ability garden middle.\nProject look season. Attack may two bring. Another marriage push sign push maybe rule.","estimatedTime":"3 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ3Ljg3ODc3NSIsInVzZXJfaWQiOiI2NzQzZDQ1ZC01OTA5LTRkN2EtOGJkNy1lNWU3YjZjYTgzMWYifQ.fFBGf9QQKpZAeZiBExcuX-voEtmCy0n2FVSKwGmwzt4' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Approach mention grow lead everyone garden.","maxScore":75,"minScore":6,"description":"Significant rich feeling phone able expect which. Four goal fire activity lot hot young voice.\nHigh hit usually meet organization someone consumer. Meet and interesting own center never manage.","estimatedTime":"4 weeks","previewFileId":"e4a89bfb-5d63-4df4-8dab-7bc28c9c0b2f","createdByUserId":"6743d45d-5909-4d7a-8bd7-e5e7b6ca831f"}'

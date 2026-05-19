@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ2LjYxNDEyMSIsInVzZXJfaWQiOiJhMzg0MWQ1OC05NGFmLTQ5YzctOWE4ZS00MmM3ZDg5NTFkYTcifQ.VxLwHHM1wLU2DV4uTZI5fT_Y6OUpwqBThqPdmepz4i4' \
+  -H 'content-length: 391' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Standard national professional house my.","maxScore":78,"minScore":1,"description":"Area glass maintain student audience situation question. Hold center include.\nEasy never away person mission behavior fast. Win energy wife order both need.","estimatedTime":"6 weeks","previewFileId":"05c6b6d2-5358-4347-838e-6f359fa65a4d","createdByUserId":"a3841d58-94af-49c7-9a8e-42c7d8951da7"}'

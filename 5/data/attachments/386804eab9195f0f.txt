@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ3LjE5OTkxMiIsInVzZXJfaWQiOiI1ZDBkOWNkNy01NjVjLTRkOWEtYjgyMC1jMzRkZTYxODQwOTkifQ.Hu4eoiLQ--OZTw67FjVeP0uwRm5rrkNbszzNMwsizGU' \
+  -H 'content-length: 353' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Continue leg grow around act new.","maxScore":90,"minScore":13,"description":"Add begin window forget about. Actually moment decide question term sign suffer. Large program their upon focus relationship.","estimatedTime":"7 weeks","previewFileId":"1c3d73a7-9997-4af2-96e7-78e09f68d3b2","createdByUserId":"5d0d9cd7-565c-4d9a-b820-c34de6184099"}'

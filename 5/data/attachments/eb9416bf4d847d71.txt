@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ1LjQ0MzE5NiIsInVzZXJfaWQiOiI4YmUxM2E1OS1hNzc0LTQ1NzItYTMzMS1mNTUxMjNkMTRlZTAifQ.L-RdTomaybiDINLU9olFwH--S25RldueggHQkRa9AKU' \
+  -H 'content-length: 445' \
+  -H 'content-type: application/json' \
+  -d '{"title":"New technology crime seven forward seven television.","maxScore":82,"minScore":30,"description":"Painting natural standard government. Structure majority whether political. Yourself investment hour chance every time.\nBed employee film. How create way. Green not cell miss life without material.","estimatedTime":"6 weeks","previewFileId":"dd402433-dd5a-4a45-b011-00c9fc0dc548","createdByUserId":"8be13a59-a774-4572-a331-f55123d14ee0"}'

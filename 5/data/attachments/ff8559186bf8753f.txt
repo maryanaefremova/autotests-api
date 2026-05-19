@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ0Ljg1MjEzNCIsInVzZXJfaWQiOiJlM2ZkZTBhZi0xMDY1LTQ5NTYtOGYxYi05MjM0MTNmNmY1NDcifQ.fOPUvUPiaSpI6K1NtKmcruy4R1WfBLAZCZEV6cHFjik' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Make lose decide wife themselves speak accept.","maxScore":100,"minScore":15,"description":"Develop sport night beyond set race have food. Agree treatment training manager. Light experience wind research reveal.","estimatedTime":"3 weeks","previewFileId":"c65cac9a-ffba-406e-a216-f41b5aac5050","createdByUserId":"e3fde0af-1065-4956-8f1b-923413f6f547"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE1OjAwOjQ2LjAyMjM1NyIsInVzZXJfaWQiOiI4M2MyMjMyNy0yMjY2LTQzZjItYWE4Mi01NmJlOTAxY2VmYTMifQ.0hMLbjokU9lNNhTz0flhgN9-TRA1HPy44sk5G45CUnM' \
+  -H 'content-length: 349' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Republican car opportunity.","maxScore":52,"minScore":26,"description":"Agreement point bring few be but daughter. These stay hold common everything heavy sister professor. I camera onto look dark I.","estimatedTime":"8 weeks","previewFileId":"0fa433fc-344d-4c60-a8f7-2cfeac81fc4e","createdByUserId":"83c22327-2266-43f2-aa82-56be901cefa3"}'
