@@ -29,23 +29,53 @@ jobs:
 
       - name: Start a test server
         env:
-          APP_HOST: "http://localhost:8000"  # Устанавливаем адрес хоста сервера
-          DATABASE_URL: "sqlite+aiosqlite:///./local.db" # Устанавливаем URL локальной базы данных
-          JWT_ALGORITHM: "HS256" # Алгоритм для JWT токенов
-          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key" # Секретный ключ для JWT
-          JWT_ACCESS_TOKEN_EXPIRE: 1800 # Время жизни access token (в секундах)
-          JWT_REFRESH_TOKEN_EXPIRE: 5184000 # Время жизни refresh token (в секундах)
-        run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course & # Запускаем сервер с указанными переменными окружения
+          APP_HOST: "http://localhost:8000"
+          DATABASE_URL: "sqlite+aiosqlite:///./local.db"
+          JWT_ALGORITHM: "HS256"
+          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key"
+          JWT_ACCESS_TOKEN_EXPIRE: 1800
+          JWT_REFRESH_TOKEN_EXPIRE: 5184000
+        run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course &
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip  # Обновляем pip до последней версии
-          pip install -r requirements.txt  # Устанавливаем зависимости, указанные в requirements.txt
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run API tests with pytest and generate Allure results
         run: |
-          pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
-      
+          pytest -m regression --alluredir=allure-results --numprocesses=2
+
+      # Восстанавливаем историю покрытия из кеша
+      - name: Restore Coverage history
+        uses: actions/cache/restore@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+          restore-keys: |
+            coverage-history-
+
+      # Генерируем HTML-отчет и обновляем историю
+      - name: Generate Coverage report
+        run: |
+          swagger-coverage-tool save-report
+
+      # Сохраняем историю обратно в кеш
+      - name: Cache Coverage  history
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+
+      # Загружаем HTML-отчет как артефакт
+      - name: Upload Coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.html
+
       - name: Upload Allure results
         if: always()
         uses: actions/upload-artifact@v4
@@ -54,27 +84,25 @@ jobs:
           path: allure-results
 
   publish-report:
+    if: always()
     needs: [ run-tests ]
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get Allure history
+      - name: Check out repository
         uses: actions/checkout@v4
-        if: always()
-        continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
 
       - name: Download Allure results
-        uses: actions/download-artifact@v5
-        if: always()
+        uses: actions/download-artifact@v4
         with:
           name: allure-results
           path: allure-results
 
-      - name: Generates Allure Report with history
-        uses: simple-elf/allure-report-action@v1.13
+      - name: Generate Allure Report with history
+        uses: simple-elf/allure-report-action@v1.12
         if: always()
         with:
           allure_results: allure-results
