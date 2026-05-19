@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjExLjA2MzAyMyIsInVzZXJfaWQiOiJmZDA3MDMwZC05ZDJjLTQ5NjYtODFkYS0zZTQzZDJjNmI0MDcifQ.Afc7aXPWtAamSMpLrileKSNXupNbifDdRmQQtFeHSi8' \
+  -H 'content-length: 444' \
+  -H 'content-type: application/json' \
+  -d '{"title":"None team understand large computer tough upon house.","maxScore":57,"minScore":27,"description":"Ahead item note air professor. Dinner perform majority discuss up staff. Inside of memory prove specific window.\nLose else where bit ago local a. Dream benefit thing cause everybody well hear so.","estimatedTime":"1 weeks","previewFileId":"ad5b0148-6d00-4756-acbd-cd489b50558e","createdByUserId":"fd07030d-9d2c-4966-81da-3e43d2c6b407"}'

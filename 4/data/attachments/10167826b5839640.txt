@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/14c93631-eb3d-48e3-8279-5a9ae1f463ef' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjExLjA2MzAyMyIsInVzZXJfaWQiOiJmZDA3MDMwZC05ZDJjLTQ5NjYtODFkYS0zZTQzZDJjNmI0MDcifQ.Afc7aXPWtAamSMpLrileKSNXupNbifDdRmQQtFeHSi8' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Break degree major together gas.","maxScore":97,"minScore":3,"description":"President career pretty assume popular hit. This executive teacher there figure.\nAbout let year know. Must true hard myself matter investment if.","estimatedTime":"8 weeks"}'

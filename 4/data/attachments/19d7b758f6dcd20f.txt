@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjE0LjM2NzI1MiIsInVzZXJfaWQiOiI5NDdmYTNlMS00NWU1LTQ4Y2MtOGE0MS03ZWE0ZmE3ZGJlNzMifQ.Z5TXlcWNczrz-aSHUhu53Q_vMCziHgNBlnLTJC97p7c' \
+  -H 'content-length: 358' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Reality customer child right.","maxScore":66,"minScore":8,"description":"Personal consumer already wait town official use. Serve positive follow customer term business. Or use audience computer old determine.","estimatedTime":"9 weeks","previewFileId":"fbc8a910-375f-40e6-9525-739c1af298d1","createdByUserId":"947fa3e1-45e5-48cc-8a41-7ea4fa7dbe73"}'

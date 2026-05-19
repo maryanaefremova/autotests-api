@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjEzLjEzMjY0OCIsInVzZXJfaWQiOiJkZjc1ZWY3Ni1kNzkxLTRmYmYtYTFhMy0wYzFhMTEwODcwOGUifQ.UtjYQl5XEfPnz04Di2lolgpumbiwmsEgKAu2HeT6mNc' \
+  -H 'content-length: 389' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Various serious film win deal hand box.","courseId":"b2bf88ba-d7f5-473b-b708-82daa710b923","maxScore":74,"minScore":24,"orderIndex":13,"description":"Require PM space Democrat. Within sure do including.\nFuture probably tonight son free. Edge stop popular difference.\nAbove fear too give skill. Identify must on bad feeling whose activity condition.","estimatedTime":"10 weeks"}'

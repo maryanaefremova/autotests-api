@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjEyLjU0NDY1MSIsInVzZXJfaWQiOiJjYjc2MDM3Ny1lNjA3LTQwOTQtOWU0MC1iZjg4Yjk0NTJmZmIifQ.gzId-RZ4JDYjpwJtXbCPvs9uAfoNpbCvxSoCajW5DYg' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Actually purpose should then.","maxScore":81,"minScore":8,"description":"Half majority prove plan garden. Bring say human read green factor. Who door attack article start then.\nWife free pay main push. Positive both rock assume eye.","estimatedTime":"4 weeks","previewFileId":"428586a3-dc6b-4f04-a561-9e1e4cf3ee81","createdByUserId":"cb760377-e607-4094-9e40-bf88b9452ffb"}'

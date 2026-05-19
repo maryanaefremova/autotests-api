@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjEzLjEzMjY0OCIsInVzZXJfaWQiOiJkZjc1ZWY3Ni1kNzkxLTRmYmYtYTFhMy0wYzFhMTEwODcwOGUifQ.UtjYQl5XEfPnz04Di2lolgpumbiwmsEgKAu2HeT6mNc' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Enjoy standard raise office hot election.","maxScore":91,"minScore":8,"description":"Attorney job describe speech. Draw street investment evening want may student opportunity.\nProperty herself stop do civil. Letter role guess subject four follow push apply.","estimatedTime":"7 weeks","previewFileId":"c77ed519-ce01-43f4-a487-b99655e66eb8","createdByUserId":"df75ef76-d791-4fbf-a1a3-0c1a1108708e"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjE1LjAxNzI5OSIsInVzZXJfaWQiOiIxY2JiMDU0Ny00M2RhLTRkYjctOWJiMy02MTA3ZmQ1NmJiN2YifQ.Ww3b-Xt2OW9QOwxTetc-WuPuOVGCvtm1n2xTMyss7eE' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ahead something million speech yet.","maxScore":88,"minScore":10,"description":"Maintain defense activity finish ago spend hundred speech. Soldier window simple somebody go receive decision. Number her cold professional behavior red. Race would energy world somebody.","estimatedTime":"3 weeks","previewFileId":"6eb4d801-b493-4470-b744-33df8afd031f","createdByUserId":"1cbb0547-43da-4db7-9bb3-6107fd56bb7f"}'

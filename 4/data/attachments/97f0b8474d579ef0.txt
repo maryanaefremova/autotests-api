@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTE5VDE0OjU3OjEzLjcyNzQyOCIsInVzZXJfaWQiOiJjN2E4NzIxMi1lY2Y0LTQ0NTEtYmY5ZS0wNjJhYmU2YzVlMTkifQ.DB6wIXH4yKVAZkzEl_-bbjgqqbKC5tM77KuwNs87b1s' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Choose born attorney agent.","maxScore":88,"minScore":3,"description":"Kitchen indeed instead process short perform.\nSoldier keep capital seem statement establish blue arrive. Owner table whatever ten. Oil deal least middle property receive small about.","estimatedTime":"6 weeks","previewFileId":"0360cbdf-d9f3-4ede-a696-ca6de5615460","createdByUserId":"c7a87212-ecf4-4451-bf9e-062abe6c5e19"}'
