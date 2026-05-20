@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjQwLjMxMTc3MSIsInVzZXJfaWQiOiIxZjAzNDNmZi04Y2M0LTQ0YzQtYjc0NS0zMzBmZTM4NTU4YjEifQ.QPI_M0-bFY_KkTuPMr7bws1_9m457rrUJHCLvgEoFSg' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Certain fear hotel hot manager charge cut.","maxScore":53,"minScore":19,"description":"For produce little one painting. Cup again measure difference watch.\nDrive second indeed feeling including onto suddenly.\nAnalysis peace some attention school. Again its without.","estimatedTime":"9 weeks","previewFileId":"88e0890d-282e-4904-bcc3-eec76b29d609","createdByUserId":"1f0343ff-8cc4-44c4-b745-330fe38558b1"}'

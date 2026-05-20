@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/f2ce7270-3889-485d-b87c-6784a966c61d' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM4LjE1MzYzNCIsInVzZXJfaWQiOiI5ZGQ0NTk2NS02N2RkLTQ1ZTctYWYwOS04YTZlNDYzNjQ1ODEifQ.lbtNr-eOZeQX0zgceNjgvHeVyWH2vfOqIvVo8YEaFFQ' \
+  -H 'content-length: 230' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Strong teach accept development.","maxScore":82,"minScore":13,"orderIndex":94,"description":"Bit hold rise other source director approach. Citizen voice activity agent special choice fly over.","estimatedTime":"3 weeks"}'

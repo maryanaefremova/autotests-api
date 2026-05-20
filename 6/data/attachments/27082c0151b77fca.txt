@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM1LjQzODkyNSIsInVzZXJfaWQiOiI4OTkxZGY3NC05Y2Y1LTRmMTAtYjU2ZS0zZTcxMzBjZWNkZDkifQ.Y_5vqLdjA9V7xnhXhTBHNZF3ZNVtLqr30cNJDbTzPo8' \
+  -H 'content-length: 336' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Face friend main create respond skin who.","maxScore":52,"minScore":4,"description":"Recent effort myself read good pick. Most team decision share. Me speech husband product side remain.","estimatedTime":"4 weeks","previewFileId":"a4c52083-b7e2-4a73-8f55-dbbb6d14fb97","createdByUserId":"8991df74-9cf5-4f10-b56e-3e7130cecdd9"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM4LjE1MzYzNCIsInVzZXJfaWQiOiI5ZGQ0NTk2NS02N2RkLTQ1ZTctYWYwOS04YTZlNDYzNjQ1ODEifQ.lbtNr-eOZeQX0zgceNjgvHeVyWH2vfOqIvVo8YEaFFQ' \
+  -H 'content-length: 353' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Art something commercial story meet allow.","maxScore":95,"minScore":14,"description":"Late second behavior indeed determine create decade. Health write in image clearly without scientist. Care low wear.","estimatedTime":"1 weeks","previewFileId":"af7dac83-444f-4f3e-9d9b-c718bd979519","createdByUserId":"9dd45965-67dd-45e7-af09-8a6e46364581"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM4Ljc5Nzg0MyIsInVzZXJfaWQiOiI0ZTFmNmVhZi1mMTkzLTQ1NGYtYjVlZC00ZjhmYTZhNzUzN2IifQ.KxkzWsAK14FL_uCbnUU9Xx-8FM3g_4DMNEFfY-KknI8' \
+  -H 'content-length: 341' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Blue culture two agree choose.","maxScore":83,"minScore":5,"description":"Simple close very history standard. Natural buy data product raise. Whether education degree respond smile available.","estimatedTime":"1 weeks","previewFileId":"7a3494f5-1707-4532-955c-5b92cd9744f1","createdByUserId":"4e1f6eaf-f193-454f-b5ed-4f8fa6a7537b"}'

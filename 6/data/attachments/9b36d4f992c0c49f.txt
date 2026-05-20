@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM4LjE1MzYzNCIsInVzZXJfaWQiOiI5ZGQ0NTk2NS02N2RkLTQ1ZTctYWYwOS04YTZlNDYzNjQ1ODEifQ.lbtNr-eOZeQX0zgceNjgvHeVyWH2vfOqIvVo8YEaFFQ' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Government visit central sure challenge hour the.","courseId":"2f29993f-6f5e-457a-b247-e0d7918e7911","maxScore":56,"minScore":10,"orderIndex":10,"description":"Main road now support language indicate.\nOver high serve media discussion season small.","estimatedTime":"1 weeks"}'

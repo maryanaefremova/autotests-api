@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/3a99a708-e63e-434d-8998-143e1dcaba22' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM1LjQzODkyNSIsInVzZXJfaWQiOiI4OTkxZGY3NC05Y2Y1LTRmMTAtYjU2ZS0zZTcxMzBjZWNkZDkifQ.Y_5vqLdjA9V7xnhXhTBHNZF3ZNVtLqr30cNJDbTzPo8' \
+  -H 'content-length: 238' \
+  -H 'content-type: application/json' \
+  -d '{"title":"First professional able produce.","maxScore":95,"minScore":11,"description":"Sound ten much soldier now. Organization down north night contain wonder statement. His now no would same special recently.","estimatedTime":"1 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM5LjM3ODA5MSIsInVzZXJfaWQiOiIwMzc0ZWQ0My0yZjExLTRkZWUtODViOC0yYTIyOGFjOGU4YTIifQ.RtsFCqmEcHJh_ROujp6SfbNr6_YGrVj76WlsyiS83k8' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Education myself reality receive toward style.","maxScore":58,"minScore":13,"description":"Well protect society cup. Truth president watch trade anyone.","estimatedTime":"1 weeks","previewFileId":"68427766-09ac-438b-b174-11c8c8c65b85","createdByUserId":"0374ed43-2f11-4dee-85b8-2a228ac8e8a2"}'

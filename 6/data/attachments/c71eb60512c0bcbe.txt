@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTIwVDEyOjMyOjM3LjU2NTYwNyIsInVzZXJfaWQiOiJhYjlmYjFhMC0yZDYxLTRiOGUtOTMyMy1jN2JhYmViN2Q3YTIifQ.Mf_sH8eCDZrtZuflp121Mln0COVTqykm2J5Rv9u3A2A' \
+  -H 'content-length: 398' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Able resource should area without focus.","maxScore":51,"minScore":29,"description":"You take article away science.\nItem quality discover be once board question. Actually strong article name.\nLet system across should world debate go. Help war we.","estimatedTime":"6 weeks","previewFileId":"16c3bbd2-db95-4da7-bdc9-81b50b5eb26e","createdByUserId":"ab9fb1a0-2d61-4b8e-9323-c7babeb7d7a2"}'
